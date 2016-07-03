@@ -112,7 +112,7 @@ a:focus::before {
   padding: 2rem 1rem;
   color: rgba(255,255,255,.75);
   background-color: #202020!important;
-  text-align: left;
+  text-align: right;
 
   background-size: cover;
   background-position: center center;
@@ -396,4 +396,33 @@ a:focus::before {
 
 .katex-loaded .MathJax_Preview {
   display: none;
+}
+
+/* Additional sidebar list
+ *
+ * Items that belongs to that list can be configuret at _config.yml in
+ * array called: 'sidebar_works'
+ */
+.sidebar-work li {
+  list-style-type: none;
+}
+
+/* Flex post container
+ *
+ * Displays post in index, with image and time
+ */
+
+.container-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  .container-post-text {
+    margin: 0 1rem;
+  }
 }

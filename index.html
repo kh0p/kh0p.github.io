@@ -11,13 +11,43 @@ title: Blog
     <ul class="related-posts">
     {% assign date = currentdate %}
   {% endif %}
-  <li>
-    <h4>
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        <span>{{ post.title }}</span>
-        <small>{{ post.date | date: "%m/%d" }}</small>
-      </a>
-    </h4>
+  <li class="container-post">
+    <img src="/public/img/{{ post.img}}">
+    <div class="container-post-text">
+      <h4>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          <span>{{ post.title }}</span>
+        </a>
+      </h4>
+      <span>
+        {% if post.tags.size > 0 %}
+          {% capture tags_content %}on {% endcapture %}
+          {% for post_tag in post.tags %}
+            {% assign tag = site.data.tags[post_tag] %}
+            {% if tag %}
+              {% capture tags_content_temp %}{{ tags_content }}<a href="{{ site.baseurl }}/tag/{{ post_tag }}/">{{ tag.name }}</a>{% if forloop.last == false %}<span>, </span>{% endif %}{% endcapture %}
+              {% assign tags_content = tags_content_temp %}
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          {% assign tags_content = '' %}
+        {% endif %}
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {% comment %}
+            U.S. Style with Full Month Names and Ordinalized Days
+          {% endcomment %}
+          {% assign d = post.date | date: "%-d"  %}
+          {{ post.date | date: "%B" }}
+          {% case d %}
+            {% when '1' or '21' or '31' %}{{ d }}<sup>st</sup>
+            {% when '2' or '22' %}{{ d }}<sup>nd</sup>
+            {% when '3' or '23' %}{{ d }}<sup>rd</sup>
+            {% else %}{{ d }}<sup>th</sup>
+          {% endcase %}
+        </time>
+        <span>{{ tags_content }}</span>
+      </span>
+    </div>
   </li>
   {% if forloop.last %}</ul><hr/>{% endif %}
 {% endfor %}

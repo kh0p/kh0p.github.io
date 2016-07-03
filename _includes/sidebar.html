@@ -52,6 +52,17 @@
       </ul>
     </nav>
 
+    <nav class="sidebar-work">
+      <ul>
+        {% for tag_key in site.sidebar_works %}
+          {% assign tag = site.data.tags[tag_key] %}
+          <li>
+            <a class="sidebar-work-item {% if page.tag == tag_key %}active{% endif %}" href="{{ site.baseurl }}/tag/{{ tag_key }}/">{{ tag.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+
     <div class="sidebar-social">
       {% if site.author.github %}
         {% include icon-github.html username=site.author.github %}

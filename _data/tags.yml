@@ -11,17 +11,34 @@
 #     *My Tag* is an example of how to define a custom tag.
 # ~~~
 
-hyde:
-  name: Hyde
-  image: /hydejack/public/img/hyde.jpg
-  color: '#949667'
+blog:
+  name: Blog
+  image: /public/img/sidebar-personal.jpg
+  color: '#9e7e9f'
   description: >
-    Hyde is a brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content.
-    It’s based on Poole, the Jekyll butler.
+    Articulation of my personal biases, conduction of an research, delving into
+    constructs of interconnected opinions and views. *A Bouquet*.
 
-jekyll:
-  name: Jekyll
-  image: /hydejack/public/img/jekyll.jpg
-  color: '#949667'
+work:
+  name: Work
+  image: /public/img/sidebar-work.jpg
+  color: '#856540'
   description: >
-    Jekyll is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
+    The word *work* itself, and the division with blog seems to imply absence of
+    bias and presence of essence. But my personal thoughts are omnipresent.
+
+phil:
+  name: Philosophy
+  description: >
+    Philosophical investigations.
+
+web:
+  name: Web development
+  description: >
+    Working with websites, both Front and Back End.
+
+econ:
+  name: Economics
+
+data:
+  name: Data Visualization
