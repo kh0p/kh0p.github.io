@@ -11,7 +11,7 @@ title:            kh0p
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:      >
-  Simple development, and home of talking gibberish. [@kh0p](http:/github.com/kh0p)
+  Simple development, and home of talking gibberish. [`@kh0p`](http:/github.com/kh0p)
 
 # The tags listed as entries in the sidebar
 sidebar_tags:     [blog, work]
@@ -41,6 +41,8 @@ author:
     I'm Kamil Żak, but [@kh0p](http://github.com/kh0p) is much shorter; *meaning*
     of it is unclear due to its randomness. I'm doing mathematics, economics,
     programming, visualization, technology, graphics and general '*art*'.
+
+    >Tu ne cede malis, sed contra audentior ito. 
 
 kramdown:
   math_engine: mathjax

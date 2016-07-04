@@ -15,4 +15,15 @@ title: About
 
 {{ site.author.about }}
 
-[write something about self]
+## Reference
+
+ - **Defalut sidebar image** [Thomas Cole](https://en.wikipedia.org/wiki/Thomas_Cole):
+   *The Consummation of Empire*. Oil on canvas, 1836, 51 × 76 in. From five-part
+   series of paintings called *The Course of Empire*.
+ - **Blog** [John Singer Sargent](https://en.wikipedia.org/wiki/John_Singer_Sargent):
+   *Carnation, Lily, Lily, Rose*. Oil on canvas,	1885, 68.5 × 60.5 in. The title
+   comes from the refrain of a popular song *Ye Shepherds Tell Me* by
+   [Joseph Mazzinghi](https://en.wikipedia.org/wiki/Joseph_Mazzinghi).
+ - **Work** [Apollodorus of Damascus](https://en.wikipedia.org/wiki/Apollodorus_of_Damascus) (Greek: *Ἀπολλόδωρος*),
+   bust from 130/140 AD. On display at Munich Glyptothek, *Saal XI: Saal der römischen Bildnisse*,
+   No. 31.

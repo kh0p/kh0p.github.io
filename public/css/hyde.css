@@ -413,11 +413,11 @@ a:focus::before {
  */
 
 .container-post {
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   padding: 1rem;
+  height: 100%;
   text-align: center;
 }
 
