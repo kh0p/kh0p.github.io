@@ -2,7 +2,7 @@
 permalink:        pretty
 
 # Setup
-url:
+url:              kh0p.github.io
 
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
 baseurl:
@@ -42,7 +42,7 @@ author:
     of it is unclear due to its randomness. I'm doing mathematics, economics,
     programming, visualization, technology, graphics and general '*art*'.
 
-    >Tu ne cede malis, sed contra audentior ito. 
+    >Tu ne cede malis, sed contra audentior ito.
 
 kramdown:
   math_engine: mathjax
