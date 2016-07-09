@@ -142,7 +142,7 @@ And to end it all, because it's getting nonsensically obnoxious, we can summariz
 the fact that:
 
 $$
-  \delta_1(x) < \delta_2(x), \: x \in \mathbb R-\{0\}
+  \delta_1(x) < \delta_2(x), \: x \in \mathbb R^{+}-\{0\}
 $$
 
 In conclusion, this pattern that is similar to Scrum[^10] because of its *iterations*

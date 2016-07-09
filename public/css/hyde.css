@@ -421,6 +421,10 @@ a:focus::before {
   text-align: center;
 }
 
+.container-post h4 {
+  margin: 0 3rem;
+}
+
 @media (min-width: 48em) {
   .container-post-text {
     margin: 0 1rem;
